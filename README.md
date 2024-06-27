@@ -104,3 +104,29 @@
 | 98 | [What is the difference between method chaining and method cascading?](#answer-98) |
 | 99 | [How do you implement the Specification pattern in JavaScript?](#answer-99) |
 | 100 | [What is the purpose of the Object.isFrozen() method?](#answer-100) |
+
+##Answers
+
+### <a id="answer-4">What is object-oriented Programming?</a>
+
+Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
+[Go back to the list of questions](#question-1)
+
+```javascript
+// Define a class
+class Car {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+
+  // Method to display car details
+  displayInfo() {
+    return `${this.make} ${this.model}`;
+  }
+}
+
+// Create an object
+const myCar = new Car('Toyota', 'Corolla');
+console.log(myCar.displayInfo()); // Output: Toyota Corolla
+
