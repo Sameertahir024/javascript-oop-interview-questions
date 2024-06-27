@@ -105,12 +105,13 @@
 | 99 | [How do you implement the Specification pattern in JavaScript?](#answer-99) |
 | 100 | [What is the purpose of the Object.isFrozen() method?](#answer-100) |
 
-##Answers
+
+## Answers
 
 ### <a id="answer-4">What is object-oriented Programming?</a>
 
 Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
-[Go back to the list of questions](#question-1)
+[Go back to the list of questions](#answer-1)
 
 ```javascript
 // Define a class
