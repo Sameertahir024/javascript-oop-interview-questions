@@ -31,7 +31,7 @@
 
 Object-oriented programming (OOP) is a coding approach where we organize our code into objects that have data (attributes) and behaviors (methods). In JavaScript, we create objects using object literals or constructor functions. Here’s a simple example:
 
-```javascript
+
 // Example of defining an object using object literal
 let person = {
     name: "John",
