@@ -113,9 +113,6 @@
 Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
 
 
-## [Go back to the list of questions](#answer-1)
-
-
 ```javascript
 // Define a class
 class Car {
@@ -133,4 +130,7 @@ class Car {
 // Create an object
 const myCar = new Car('Toyota', 'Corolla');
 console.log(myCar.displayInfo()); // Output: Toyota Corolla
+```
+## [Go back](#answer-1)
+
 
