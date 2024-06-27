@@ -43,10 +43,13 @@ let person = {
 
 person.greet(); // Outputs: Hello, my name is John and I am 30 years old.
 
+---
 
 ### <a id="answer-2">Explain inheritance and its types in JavaScript.</a>
 
 Inheritance allows one class (subclass) to inherit the properties and methods of another class (superclass). In JavaScript, inheritance can be achieved through prototype chaining and ES6 classes. Types of inheritance include single inheritance, multiple inheritance, and multilevel inheritance.
+
+---
 
 ### <a id="answer-3">What is polymorphism in JavaScript? Provide an example.</a>
 
