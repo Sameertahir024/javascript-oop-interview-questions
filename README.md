@@ -31,7 +31,7 @@
 
 Object-oriented programming (OOP) is a coding approach where we organize our code into objects that have data (attributes) and behaviors (methods). In JavaScript, we create objects using object literals or constructor functions. Here’s a simple example:
 
-
+```javascript
 // Example of defining an object using object literal
 let person = {
     name: "John",
@@ -43,31 +43,3 @@ let person = {
 
 person.greet(); // Outputs: Hello, my name is John and I am 30 years old.
 
----
-
-### <a id="answer-2">Explain inheritance and its types in JavaScript.</a>
-
-Inheritance allows one class (subclass) to inherit the properties and methods of another class (superclass). In JavaScript, inheritance can be achieved through prototype chaining and ES6 classes. Types of inheritance include single inheritance, multiple inheritance, and multilevel inheritance.
-
----
-
-### <a id="answer-3">What is polymorphism in JavaScript? Provide an example.</a>
-
-Polymorphism allows methods to behave differently based on the object that calls them. In JavaScript, polymorphism is achieved through method overriding and method overloading.
-
-```javascript
-// Example of polymorphism with method overriding
-class Animal {
-  makeSound() {
-    console.log('Animal makes a sound');
-  }
-}
-
-class Dog extends Animal {
-  makeSound() {
-    console.log('Dog barks');
-  }
-}
-
-const dog = new Dog();
-dog.makeSound(); // Output: Dog barks
