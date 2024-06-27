@@ -131,6 +131,6 @@ class Car {
 const myCar = new Car('Toyota', 'Corolla');
 console.log(myCar.displayInfo()); // Output: Toyota Corolla
 ```
-## [Go back](#answer-1)
+# [Go back](#answer-1)
 
 
