@@ -2,7 +2,7 @@
 
 | No. | Question                                                                                   |
 |-----|-------------------------------------------------------------------------------------------|
-| 1.  | [What is encapsulation in OOP?](#answer-1)                                                  |
+| 1.  | [What is object-oriented Programming?](#answer-1)                                                  |
 | 2.  | [Explain inheritance and its types in JavaScript.](#answer-2)                               |
 | 3.  | [What is polymorphism in JavaScript? Provide an example.](#answer-3)                        |
 | 4.  | [What are classes in JavaScript? Provide syntax and an example.](#answer-4)                  |
@@ -27,9 +27,22 @@
 
 ## Answers
 
-### <a id="answer-1">What is encapsulation in OOP?</a>
+### <a id="answer-1">What is object-oriented Programming?</a>
 
-Encapsulation is the bundling of data (attributes) and methods (functions) that operate on the data into a single unit (class). It helps in data hiding and reduces complexity.
+Object-oriented programming (OOP) is a coding approach where we organize our code into objects that have data (attributes) and behaviors (methods). In JavaScript, we create objects using object literals or constructor functions. Here’s a simple example:
+
+```javascript
+// Example of defining an object using object literal
+let person = {
+    name: "John",
+    age: 30,
+    greet: function() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+};
+
+person.greet(); // Outputs: Hello, my name is John and I am 30 years old.
+
 
 ### <a id="answer-2">Explain inheritance and its types in JavaScript.</a>
 
