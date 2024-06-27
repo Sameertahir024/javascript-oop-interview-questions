@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-| # | Questions |
+| No | Questions |
 |---|-----------|
 | 1 | [What is object-oriented Programming?](#answer-1) |
 | 2 | [How does JavaScript support OOP?](#answer-2) |
