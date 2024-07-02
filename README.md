@@ -2,8 +2,10 @@
 
 ## Table of Contents
 
-| No | Questions |
-|---|-----------|
+| No  | Questions |
+| --- | --------- |
+
+| 1 | [What is object-oriented Programming?](#answer-1) |
 | 1 | [What is object-oriented Programming?](#answer-1) |
 | 2 | [How does JavaScript support OOP?](#answer-2) |
 | 3 | [What are the four main principles of OOP?](#answer-3) |
@@ -55,7 +57,7 @@
 | 49 | [How do you implement a Proxy object in JavaScript?](#answer-49) |
 | 50 | [What is the purpose of the Object.is() method?](#answer-50) |
 | 51 | [How do you use Object.assign() for object composition?](#answer-51) |
-| 52 | [What is the difference between __proto__ and prototype?](#answer-52) |
+| 52 | [What is the difference between **proto** and prototype?](#answer-52) |
 | 53 | [How do you implement a memoization pattern in JavaScript?](#answer-53) |
 | 54 | [What is the difference between instance properties and prototype properties?](#answer-54) |
 | 55 | [How do you implement the Command pattern in JavaScript?](#answer-55) |
@@ -105,13 +107,11 @@
 | 99 | [How do you implement the Specification pattern in JavaScript?](#answer-99) |
 | 100 | [What is the purpose of the Object.isFrozen() method?](#answer-100) |
 
-
 ## Answers
 
 ### <a id="answer-1">What is object-oriented Programming?</a>
 
 Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
-
 
 ```javascript
 // Define a class
@@ -128,9 +128,8 @@ class Car {
 }
 
 // Create an object
-const myCar = new Car('Toyota', 'Corolla');
+const myCar = new Car("Toyota", "Corolla");
 console.log(myCar.displayInfo()); // Output: Toyota Corolla
 ```
+
 [↑ Go back](#question-1)
-
-
