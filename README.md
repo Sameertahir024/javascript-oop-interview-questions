@@ -5,7 +5,6 @@
 | No  | Questions                                                                                                    |
 | --- | ------------------------------------------------------------------------------------------------------------ |
 | 1   | [What is object-oriented Programming?](#answer-1)                                                            |
-| 1   | [What is object-oriented Programming?](#answer-1)                                                            |
 | 2   | [How does JavaScript support OOP?](#answer-2)                                                                |
 | 3   | [What are the four main principles of OOP?](#answer-3)                                                       |
 | 4   | [How do you create an object in JavaScript?](#answer-4)                                                      |
