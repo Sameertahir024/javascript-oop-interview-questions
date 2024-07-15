@@ -131,3 +131,132 @@ console.log(myCar.displayInfo()); // Output: Toyota Corolla
 ```
 
 [↑ Go back](#question-1)
+
+### <a id="answer-1">What is object-oriented Programming?</a>
+
+Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
+
+```javascript
+// Define a class
+class Car {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+
+  // Method to display car details
+  displayInfo() {
+    return `${this.make} ${this.model}`;
+  }
+}
+
+// Create an object
+const myCar = new Car("Toyota", "Corolla");
+console.log(myCar.displayInfo()); // Output: Toyota Corolla
+```
+
+[↑ Go back](#question-1)
+### <a id="answer-1">What is object-oriented Programming?</a>
+
+Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
+
+```javascript
+// Define a class
+class Car {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+
+  // Method to display car details
+  displayInfo() {
+    return `${this.make} ${this.model}`;
+  }
+}
+
+// Create an object
+const myCar = new Car("Toyota", "Corolla");
+console.log(myCar.displayInfo()); // Output: Toyota Corolla
+```
+
+[↑ Go back](#question-1)
+### <a id="answer-1">What is object-oriented Programming?</a>
+
+Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
+
+```javascript
+// Define a class
+class Car {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+
+  // Method to display car details
+  displayInfo() {
+    return `${this.make} ${this.model}`;
+  }
+}
+
+// Create an object
+const myCar = new Car("Toyota", "Corolla");
+console.log(myCar.displayInfo()); // Output: Toyota Corolla
+```
+
+[↑ Go back](#question-1)
+### <a id="answer-1">What is object-oriented Programming?</a>
+
+Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
+
+```javascript
+// Define a class
+class Car {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+
+  // Method to display car details
+  displayInfo() {
+    return `${this.make} ${this.model}`;
+  }
+}
+
+// Create an object
+const myCar = new Car("Toyota", "Corolla");
+console.log(myCar.displayInfo()); // Output: Toyota Corolla
+```
+
+[↑ Go back](#question-1)
+### <a id="answer-1">What is object-oriented Programming?</a>
+
+Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
+
+```javascript
+// Define a class
+class Car {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+
+  // Method to display car details
+  displayInfo() {
+    return `${this.make} ${this.model}`;
+  }
+}
+
+// Create an object
+const myCar = new Car("Toyota", "Corolla");
+console.log(myCar.displayInfo()); // Output: Toyota Corolla
+```
+
+[↑ Go back](#question-1)
+JavaScript supports Object-Oriented Programming (OOP) through:
+
+Objects
+Classes (ES6+)
+Prototypes
+Inheritance
+
+Example using a class:
