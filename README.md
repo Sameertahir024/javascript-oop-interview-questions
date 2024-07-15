@@ -115,7 +115,6 @@ Object-oriented programming (OOP) is a way to structure code by creating objects
 class Car {
   constructor(make, model) {
     this.make = make;
-    this.model = model;
   }
 
   // Method to display car details
@@ -130,7 +129,36 @@ console.log(myCar.displayInfo()); // Output: Toyota Corolla
 ```
 
 [↑ Go back](#question-1)
+
 ### <a id="answer-2">How does JavaScript support OOP??</a>
+
+JavaScript supports Object-Oriented Programming (OOP) through:
+
+Objects
+Classes (ES6+)
+Prototypes
+Inheritance
+
+Example using a class:
+```javascript
+class Car {
+  constructor(brand) {
+    this.brand = brand;
+  }
+  
+  drive() {
+    console.log(`Driving a ${this.brand}`);
+  }
+}
+
+const myCar = new Car("Toyota");
+myCar.drive(); // Outputs: Driving a Toyota
+
+```
+
+[↑ Go back](#question-2)
+
+
 ### <a id="answer-3">What is object-oriented Programming?</a>
 ### <a id="answer-4">What is object-oriented Programming?</a>
 ### <a id="answer-5">What is object-oriented Programming?</a>
