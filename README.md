@@ -161,10 +161,11 @@ myCar.drive(); // Outputs: Driving a Toyota
 
 ### <a id="answer-3">What are the four main principles of OOP?</a>
 
+
 ### <a id="answer-4">How do you create an object in JavaScript?</a>
 In JavaScript, there are several ways to create an object. Here are a few common methods:
 
-1. Using Object Literal Syntax
+## 1. Using Object Literal Syntax
 ```javascript
 const person = {
     name: 'John',
@@ -176,7 +177,7 @@ const person = {
 
 person.greet(); // Output: Hello, John
 ```
-2. Using the new Object() Syntax
+## 2. Using the new Object() Syntax
 ```javascript
 const person = new Object();
 person.name = 'John';
@@ -188,7 +189,7 @@ person.greet = function() {
 person.greet(); // Output: Hello, John
 
 ```
-3. Using a Constructor Function
+## 3. Using a Constructor Function
 ```javascript
 function Person(name, age) {
     this.name = name;
@@ -202,7 +203,7 @@ const person = new Person('John', 30);
 person.greet(); // Output: Hello, John
 
 ```
-4. Using ES6 Classes
+## 4. Using ES6 Classes
 ```javascript
 class Person {
     constructor(name, age) {
@@ -221,10 +222,63 @@ person.greet(); // Output: Hello, John
 
 ```
 
-### <a id="answer-5">What is object-oriented Programming?</a>
-### <a id="answer-6">What is object-oriented Programming?</a>
-### <a id="answer-7">What is object-oriented Programming?</a>
-### <a id="answer-8">What is object-oriented Programming?</a>
+### <a id="answer-5">What is the difference between object literal notation and constructor function?</a>
+## Object Literal Notation
+Object literal notation is a simple and concise way to create objects in JavaScript. It is best suited for creating single objects or objects that do not require a blueprint.
+```javascript
+const person = {
+    name: 'John',
+    age: 30,
+    greet: function() {
+        console.log('Hello, ' + this.name);
+    }
+};
+
+person.greet(); // Output: Hello, John
+```
+## Constructor Function
+Definition: A constructor function is a template for creating multiple objects with the same properties and methods. It uses the function keyword and can be instantiated using the new keyword.
+```javascript
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.greet = function() {
+        console.log('Hello, ' + this.name);
+    };
+}
+
+const person1 = new Person('John', 30);
+
+```
+
+
+### <a id="answer-6">What is a prototype in JavaScript?</a>
+In JavaScript, every object has a prototype. A prototype is an object from which other objects inherit properties and methods. Prototypes allow you to add properties and methods to objects after they are created, which enables inheritance and the reuse of code.
+```javascript
+// Constructor function
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// Adding a method to the prototype
+Person.prototype.greet = function() {
+    console.log('Hello, ' + this.name);
+};
+
+// Creating objects
+const person1 = new Person('John', 30);
+const person2 = new Person('Jane', 25);
+
+person1.greet(); // Output: Hello, John
+person2.greet(); // Output: Hello, Jane
+
+```
+
+### <a id="answer-7">How does prototypal inheritance work in JavaScript?</a>
+pending................................
+### <a id="answer-8">What is the difference between classical inheritance and prototypal inheritance?</a>
+pending........................
 ### <a id="answer-9">What is object-oriented Programming?</a>
 ### <a id="answer-10">What is object-oriented Programming?</a>
 ### <a id="answer-11">What is object-oriented Programming?</a>
@@ -234,16 +288,199 @@ person.greet(); // Output: Hello, John
 ### <a id="answer-15">What is object-oriented Programming?</a>
 ### <a id="answer-16">What is object-oriented Programming?</a>
 ### <a id="answer-17">What is object-oriented Programming?</a>
-### <a id="answer-18">What is object-oriented Programming?</a>
-### <a id="answer-19">What is object-oriented Programming?</a>
-### <a id="answer-20">What is object-oriented Programming?</a>
-### <a id="answer-21">What is object-oriented Programming?</a>
-### <a id="answer-22">What is object-oriented Programming?</a>
-### <a id="answer-23">What is object-oriented Programming?</a>
+### <a id="answer-18">What are getters and setters in JavaScript?</a>
+In JavaScript, getters and setters are special methods that allow you to define the behavior of accessing and setting values on an object's properties.
+
+Getter: A getter is a method that gets the value of a specific property. It is defined using the get keyword followed by a function. When you access the property, the getter function is executed, and its return value is used as the property value.
+```javascript
+const obj = {
+    get fullName() {
+        return `${this.firstName} ${this.lastName}`;
+    },
+    firstName: 'John',
+    lastName: 'Doe'
+};
+
+console.log(obj.fullName); // Outputs: "John Doe"
+
+```
+Setter: A setter is a method that sets the value of a specific property. It is defined using the set keyword followed by a function that takes a parameter representing the new value. When you assign a value to the property, the setter function is called with the assigned value.
+```javascript
+const obj = {
+    firstName: 'John',
+    lastName: 'Doe',
+    set fullName(value) {
+        const [first, last] = value.split(' ');
+        this.firstName = first;
+        this.lastName = last;
+    }
+};
+
+obj.fullName = 'Jane Smith';
+console.log(obj.firstName); // Outputs: "Jane"
+console.log(obj.lastName); // Outputs: "Smith"
+
+
+```
+
+### <a id="answer-19">How does the 'new' keyword work in JavaScript?</a>
+In JavaScript, the new keyword is used to create an instance of a user-defined object type (often called a constructor function) or a built-in object type that has a constructor function. Here's how it works:
+
+Creating an Instance: When you use new with a constructor function, it creates a new object instance. This new instance inherits properties and methods defined on the constructor's prototype.
+```javascript
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+const john = new Person('John', 30);
+```
+
+
+### <a id="answer-20">What is the difference between Object.create() and the new keyword?</a>
+The Object.create() method and the new keyword in JavaScript serve different purposes for object creation and inheritance:
+
+## Object.create():
+
+Purpose: Creates a new object with the specified prototype object and optionally defines its properties.
+Syntax: Object.create(proto [, propertiesObject])
+
+```javascript
+const protoObj = {
+    greet() {
+        console.log(`Hello, ${this.name}!`);
+    }
+};
+
+const obj = Object.create(protoObj, {
+    name: { value: 'John' }
+});
+
+obj.greet(); // Outputs: "Hello, John!"
+
+```
+## new Keyword:
+
+Purpose: Creates an instance of a constructor function, which typically defines properties and methods for the objects it creates.
+```javascript
+function Person(name) {
+    this.name = name;
+}
+
+const john = new Person('John');
+
+```
+
+### <a id="answer-21">How do you implement multiple inheritance in JavaScript?</a>
+
+pending...................
+### <a id="answer-22">What is the purpose of the constructor method in a class?</a>
+Purpose of the Constructor Method in a Class:
+1: Initialization: Sets up initial values for object properties.
+
+2: State Setup: Establishes the initial state of the object.
+
+3: Binding: Binds methods to the instance.
+3: Inheritance: Calls super() to initialize properties from a parent class.
+```javascript
+class Person {
+    // Constructor method
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+const john = new Person('John', 30);
+console.log(john.name); // Outputs: "John"
+console.log(john.age); // Outputs: 30
+
+```
+### <a id="answer-23">How do you use the 'super' keyword in JavaScript?</a>
+Purpose of the super Keyword in JavaScript:
+## Constructor Calls:
+Allows calling the constructor of a parent class from within a subclass constructor to initialize inherited properties.
+## Method Calls:
+Facilitates invoking methods from the parent class within subclass methods to extend or override their behavior.
+```javascript
+// Parent class
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+
+    makeSound() {
+        console.log("Animal makes a sound");
+    }
+}
+
+// Subclass extending Animal
+class Dog extends Animal {
+    constructor(name, breed) {
+        super(name); // Calling parent constructor
+        this.breed = breed;
+    }
+
+    makeSound() {
+        super.makeSound(); // Calling parent method
+        console.log("Woof!");
+    }
+}
+
+// Creating an instance of Dog
+const myDog = new Dog('Buddy', 'Labrador');
+
+// Using the subclass methods and inherited properties
+console.log(myDog.name); // Outputs: "Buddy"
+myDog.makeSound(); // Outputs:
+// "Animal makes a sound"
+// "Woof!"
+
+```
 ### <a id="answer-24">What is object-oriented Programming?</a>
-### <a id="answer-25">What is object-oriented Programming?</a>
-### <a id="answer-26">What is object-oriented Programming?</a>
-### <a id="answer-27">What is object-oriented Programming?</a>
+pending.....................
+
+### <a id="answer-25">How do you implement a Singleton pattern in JavaScript?</a>
+pending......................
+
+### <a id="answer-26">What is the Module pattern in JavaScript?</a>
+The Module pattern in JavaScript is a design pattern used to create encapsulated and reusable code. It provides a way to create private and public methods and variables, helping to shield particular parts from the global scope.
+Key features:
+
+1:Encapsulation
+
+2:Privacy
+
+3:Organization
+
+Example:
+```javascript
+const Calculator = (function() {
+  // Private variable
+  let result = 0;
+  
+  // Public methods
+  return {
+    add: function(x) {
+      result += x;
+    },
+    subtract: function(x) {
+      result -= x;
+    },
+    getResult: function() {
+      return result;
+    }
+  };
+})();
+
+Calculator.add(5);
+Calculator.subtract(2);
+console.log(Calculator.getResult()); // Outputs: 3
+console.log(Calculator.result); // Outputs: undefined
+```
+### <a id="answer-27">How do you implement the Observer pattern in JavaScript?</a>
+pending....................
+
 ### <a id="answer-28">What is object-oriented Programming?</a>
 ### <a id="answer-29">What is object-oriented Programming?</a>
 ### <a id="answer-30">What is object-oriented Programming?</a>
