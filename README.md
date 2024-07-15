@@ -135,11 +135,8 @@ console.log(myCar.displayInfo()); // Output: Toyota Corolla
 JavaScript supports Object-Oriented Programming (OOP) through:
 
 1:Objects
-
 2:Classes (ES6+)
-
 3:Prototypes
-
 4:Inheritance
 
 Example using a class:
@@ -162,8 +159,68 @@ myCar.drive(); // Outputs: Driving a Toyota
 [↑ Go back](#question-2)
 
 
-### <a id="answer-3">What is object-oriented Programming?</a>
-### <a id="answer-4">What is object-oriented Programming?</a>
+### <a id="answer-3">What are the four main principles of OOP?</a>
+
+### <a id="answer-4">How do you create an object in JavaScript?</a>
+In JavaScript, there are several ways to create an object. Here are a few common methods:
+
+1. Using Object Literal Syntax
+```javascript
+const person = {
+    name: 'John',
+    age: 30,
+    greet: function() {
+        console.log('Hello, ' + this.name);
+    }
+};
+
+person.greet(); // Output: Hello, John
+```
+2. Using the new Object() Syntax
+```javascript
+const person = new Object();
+person.name = 'John';
+person.age = 30;
+person.greet = function() {
+    console.log('Hello, ' + this.name);
+};
+
+person.greet(); // Output: Hello, John
+
+```
+3. Using a Constructor Function
+```javascript
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.greet = function() {
+        console.log('Hello, ' + this.name);
+    };
+}
+
+const person = new Person('John', 30);
+person.greet(); // Output: Hello, John
+
+```
+4. Using ES6 Classes
+```javascript
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log('Hello, ' + this.name);
+    }
+}
+
+const person = new Person('John', 30);
+person.greet(); // Output: Hello, John
+
+
+```
+
 ### <a id="answer-5">What is object-oriented Programming?</a>
 ### <a id="answer-6">What is object-oriented Programming?</a>
 ### <a id="answer-7">What is object-oriented Programming?</a>
