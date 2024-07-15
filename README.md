@@ -5,7 +5,8 @@
 | No  | Questions                                                                                                    |
 | --- | ------------------------------------------------------------------------------------------------------------ |
 | 1   | [What is object-oriented Programming?](#answer-1)                                                            |
-| 2   | [How does JavaScript support OOP?](#answer-2)                                                                |
+| 2   | [How does JavaScript support OOP?](#answer-2)   
+|     | [Why is OOPs so popular?](#answer-49)|
 | 3   | [What are the four main principles of OOP?](#answer-3)                                                       |
 | 4   | [How do you create an object in JavaScript?](#answer-4)                                                      |
 | 5   | [What is the difference between object literal notation and constructor function?](#answer-5)                |
@@ -37,8 +38,6 @@
 | 31  | [How do you use Symbol to create truly private properties?](#answer-31)                                      |
 | 32  | [What is a closure in JavaScript??](#answer-32)                                      |
 | 33  | [How do you implement mixins in JavaScript?](#answer-33)                                                     |
-| 34  | [What is the difference between Object.seal() and Object.freeze()](#answer-34)                               |
-| 35  | [How do you use Object.defineProperty()?](#answer-35)                                                        |
 | 36  | [What is the purpose of the 'use strict' directive in JavaScript?](#answer-36)                               |
 | 38  | [What is the difference between deep and shallow copying of objects?](#answer-38)                            |
 | 39  | [How do you implement method borrowing in JavaScript?](#answer-39)                                           |
@@ -46,37 +45,19 @@
 | 41  | [What is the difference between Object.assign and Object.create in JavaScript?](#answer-41)                                    |
 | 42  | [What is SOLID and how does it apply to JavaScript?](#answer-42)                                             |
 | 44  | [What is the difference between abstract classes and interfaces in JavaScript?](#answer-44)                  |
-| 45  | [How do you implement namespacing in JavaScript?](#answer-45)                                                |
 | 46  | [What is the instanceof operator in JavaScript??](#answer-46)                                                |
-| 47  | [How do you use Object.create() for inheritance?](#answer-47)                                                |
 | 48  | [What is the difference between for...in and for...of loops when dealing with objects?](#answer-48)          |
-| 49  | [Why is OOPs so popular?](#answer-49)          
+| 49  | [What are the different types of inheritance?](#answer-49)          
 |     | [What is the difference between overloading and overriding?](#answer-)          
 | 52  | [What is the difference between **proto** and prototype?](#answer-52)                                        |
 | 54  | [What is the difference between instance properties and prototype properties?](#answer-54)                   |
-| 55  | [How do you implement the Command pattern in JavaScript?](#answer-55)                                        |
 | 56  | [What is the purpose of the instanceof operator?](#answer-56)                                                |
 | 57  | [How do you implement method overriding in JavaScript?](#answer-57)                                          |
-| 60  | [What is the purpose of the Object.keys() method?](#answer-60)                                               |
-| 61  | [How do you implement a fluent interface in JavaScript?](#answer-61)                                         |
-| 62  | [What is the difference between function constructors and factory functions?](#answer-62)                    |
-| 70  | [What is the difference between hasOwnProperty() and in operator?](#answer-70)                               |
 | 71  | [How do you implement the Iterator pattern in JavaScript?](#answer-71)                                       |
 | 74  | [What is the difference between Object.keys() and Object.getOwnPropertyNames()?](#answer-74)                 |
 | 82  | [What is the difference between Object and Map?](#answer-82)                                                 |
-| 85  | [How do you implement the Interpreter pattern in JavaScript?](#answer-85)                                    |
-| 87  | [How do you implement the Prototype pattern in JavaScript?](#answer-87)                                      |
-| 89  | [How do you implement the Null Object pattern in JavaScript?](#answer-89)                                    |
-| 90  | [What is the difference between aggregation and composition in OOP?](#answer-90)                             |
-| 91  | [How do you implement the Lazy Loading pattern in JavaScript?](#answer-91)                                   |
 | 92  | [What is a Static Method in JavaScript?](#answer-92)                                   |
-| 93  | [How do you implement the Dependency Injection pattern in JavaScript?](#answer-93)                           |
-| 94  | [What is the difference between tight coupling and loose coupling?](#answer-94)                              |
-| 95  | [How do you implement the Unit of Work pattern in JavaScript?](#answer-95)                                   |                                  
-| 97  | [How do you implement the Repository pattern in JavaScript?](#answer-97)                                     |
-| 98  | [What is the difference between method chaining and method cascading?](#answer-98)                           |
-| 99  | [How do you implement the Specification pattern in JavaScript?](#answer-99)                                  |
-|
+
 
 ## Answers
 
