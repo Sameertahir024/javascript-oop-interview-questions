@@ -50,7 +50,6 @@
 | 44  | [What is the difference between instance properties and prototype properties?](#answer-54)                   |
 | 45  | [What is the purpose of the instanceof operator?](#answer-56)                                                |
 | 46  | [How do you implement method overriding in JavaScript?](#answer-57)                                          |
-| 47  | [How do you implement the Iterator pattern in JavaScript?](#answer-71)                                       |
 | 48  | [What is the difference between Object and Map?](#answer-82)                                                 |
 | 49  | [What is a Static Method in JavaScript?](#answer-92)                                   |
 
@@ -166,7 +165,7 @@ const account = new BankAccount(1000);
 account.deposit(500);
 account.withdraw(200);
 ```
-## SOP:
+SOP:
 ```javascript
 let balance = 1000;
 
@@ -596,6 +595,29 @@ boundGreet('Hey', '.');  // Output: Hey, John.
 ### <a id="answer-47">What is object-oriented Programming?</a>
 ### <a id="answer-48">What is object-oriented Programming?</a>
 ### <a id="answer-49">What is object-oriented Programming?</a>
+A static method in JavaScript is a method that belongs to the class itself rather than to instances of the class. Key points about static methods:
+
+Called on the class, not on instances
+Cannot access instance-specific data (i.e., can't use 'this' to refer to instance properties)
+Often used for utility functions related to the class
+```javascript
+class MathOperations {
+  static add(x, y) {
+    return x + y;
+  }
+  
+  static multiply(x, y) {
+    return x * y;
+  }
+}
+
+console.log(MathOperations.add(5, 3));      // Outputs: 8
+console.log(MathOperations.multiply(4, 2)); // Outputs: 8
+
+// This would throw an error:
+// const math = new MathOperations();
+// math.add(1, 2);  // Error: math.add is not a function
+```
 ### <a id="answer-50">What is object-oriented Programming?</a>
 ### <a id="answer-51">What is object-oriented Programming?</a>
 ### <a id="answer-52">What is the difference between **proto** and prototype?</a>
