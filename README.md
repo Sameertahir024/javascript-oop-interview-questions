@@ -108,7 +108,6 @@
 ## Answers
 
 ### <a id="answer-1">What is object-oriented Programming?</a>
-
 Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
 
 ```javascript
@@ -131,6 +130,109 @@ console.log(myCar.displayInfo()); // Output: Toyota Corolla
 ```
 
 [↑ Go back](#question-1)
+### <a id="answer-2">How does JavaScript support OOP??</a>
+### <a id="answer-3">What is object-oriented Programming?</a>
+### <a id="answer-4">What is object-oriented Programming?</a>
+### <a id="answer-5">What is object-oriented Programming?</a>
+### <a id="answer-6">What is object-oriented Programming?</a>
+### <a id="answer-7">What is object-oriented Programming?</a>
+### <a id="answer-8">What is object-oriented Programming?</a>
+### <a id="answer-9">What is object-oriented Programming?</a>
+### <a id="answer-10">What is object-oriented Programming?</a>
+### <a id="answer-11">What is object-oriented Programming?</a>
+### <a id="answer-12">What is object-oriented Programming?</a>
+### <a id="answer-13">What is object-oriented Programming?</a>
+### <a id="answer-14">What is object-oriented Programming?</a>
+### <a id="answer-15">What is object-oriented Programming?</a>
+### <a id="answer-16">What is object-oriented Programming?</a>
+### <a id="answer-17">What is object-oriented Programming?</a>
+### <a id="answer-18">What is object-oriented Programming?</a>
+### <a id="answer-19">What is object-oriented Programming?</a>
+### <a id="answer-20">What is object-oriented Programming?</a>
+### <a id="answer-21">What is object-oriented Programming?</a>
+### <a id="answer-22">What is object-oriented Programming?</a>
+### <a id="answer-23">What is object-oriented Programming?</a>
+### <a id="answer-24">What is object-oriented Programming?</a>
+### <a id="answer-25">What is object-oriented Programming?</a>
+### <a id="answer-26">What is object-oriented Programming?</a>
+### <a id="answer-27">What is object-oriented Programming?</a>
+### <a id="answer-28">What is object-oriented Programming?</a>
+### <a id="answer-29">What is object-oriented Programming?</a>
+### <a id="answer-30">What is object-oriented Programming?</a>
+### <a id="answer-31">What is object-oriented Programming?</a>
+### <a id="answer-32">What is object-oriented Programming?</a>
+### <a id="answer-33">What is object-oriented Programming?</a>
+### <a id="answer-34">What is object-oriented Programming?</a>
+### <a id="answer-35">What is object-oriented Programming?</a>
+### <a id="answer-36">What is object-oriented Programming?</a>
+### <a id="answer-37">What is object-oriented Programming?</a>
+### <a id="answer-38">What is object-oriented Programming?</a>
+### <a id="answer-39">What is object-oriented Programming?</a>
+### <a id="answer-40">What is object-oriented Programming?</a>
+### <a id="answer-41">What is object-oriented Programming?</a>
+### <a id="answer-42">What is object-oriented Programming?</a>
+### <a id="answer-43">What is object-oriented Programming?</a>
+### <a id="answer-44">What is object-oriented Programming?</a>
+### <a id="answer-45">What is object-oriented Programming?</a>
+### <a id="answer-46">What is object-oriented Programming?</a>
+### <a id="answer-47">What is object-oriented Programming?</a>
+### <a id="answer-48">What is object-oriented Programming?</a>
+### <a id="answer-49">What is object-oriented Programming?</a>
+### <a id="answer-50">What is object-oriented Programming?</a>
+### <a id="answer-51">What is object-oriented Programming?</a>
+### <a id="answer-52">What is object-oriented Programming?</a>
+### <a id="answer-53">What is object-oriented Programming?</a>
+### <a id="answer-54">What is object-oriented Programming?</a>
+### <a id="answer-55">What is object-oriented Programming?</a>
+### <a id="answer-56">What is object-oriented Programming?</a>
+### <a id="answer-57">What is object-oriented Programming?</a>
+### <a id="answer-58">What is object-oriented Programming?</a>
+### <a id="answer-59">What is object-oriented Programming?</a>
+### <a id="answer-60">What is object-oriented Programming?</a>
+### <a id="answer-61">What is object-oriented Programming?</a>
+### <a id="answer-62">What is object-oriented Programming?</a>
+### <a id="answer-63">What is object-oriented Programming?</a>
+### <a id="answer-64">What is object-oriented Programming?</a>
+### <a id="answer-65">What is object-oriented Programming?</a>
+### <a id="answer-66">What is object-oriented Programming?</a>
+### <a id="answer-67">What is object-oriented Programming?</a>
+### <a id="answer-68">What is object-oriented Programming?</a>
+### <a id="answer-69">What is object-oriented Programming?</a>
+### <a id="answer-70">What is object-oriented Programming?</a>
+### <a id="answer-71">What is object-oriented Programming?</a>
+### <a id="answer-71">What is object-oriented Programming?</a>
+### <a id="answer-72">What is object-oriented Programming?</a>
+### <a id="answer-73">What is object-oriented Programming?</a>
+### <a id="answer-74">What is object-oriented Programming?</a>
+### <a id="answer-75">What is object-oriented Programming?</a>
+### <a id="answer-76">What is object-oriented Programming?</a>
+### <a id="answer-77">What is object-oriented Programming?</a>
+### <a id="answer-78">What is object-oriented Programming?</a>
+### <a id="answer-79">What is object-oriented Programming?</a>
+### <a id="answer-80">What is object-oriented Programming?</a>
+### <a id="answer-81>What is object-oriented Programming?</a>
+### <a id="answer-82">What is object-oriented Programming?</a>
+### <a id="answer-83">What is object-oriented Programming?</a>
+### <a id="answer-84">What is object-oriented Programming?</a>
+### <a id="answer-85">What is object-oriented Programming?</a>
+### <a id="answer-86">What is object-oriented Programming?</a>
+### <a id="answer-87">What is object-oriented Programming?</a>
+### <a id="answer-88">What is object-oriented Programming?</a>
+### <a id="answer-89">What is object-oriented Programming?</a>
+### <a id="answer-90">What is object-oriented Programming?</a>
+### <a id="answer-91">What is object-oriented Programming?</a>
+### <a id="answer-92">What is object-oriented Programming?</a>
+### <a id="answer-93">What is object-oriented Programming?</a>
+### <a id="answer-94">What is object-oriented Programming?</a>
+### <a id="answer-95">What is object-oriented Programming?</a>
+### <a id="answer-96">What is object-oriented Programming?</a>
+### <a id="answer-97">What is object-oriented Programming?</a>
+### <a id="answer-98">What is object-oriented Programming?</a>
+### <a id="answer-99">What is object-oriented Programming?</a>
+### <a id="answer-100">What is object-oriented Programming?</a>
+
+
+
 
 ### <a id="answer-1">What is object-oriented Programming?</a>
 
