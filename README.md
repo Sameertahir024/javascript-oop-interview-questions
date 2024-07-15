@@ -489,11 +489,64 @@ pending....................
 ### <a id="answer-33">What is object-oriented Programming?</a>
 ### <a id="answer-34">What is object-oriented Programming?</a>
 ### <a id="answer-35">What is object-oriented Programming?</a>
-### <a id="answer-36">What is object-oriented Programming?</a>
+### <a id="answer-36">What is the purpose of the 'use strict' directive in JavaScript?</a>
+
+The 'use strict' directive in JavaScript enables strict mode, which enforces stricter parsing and error handling rules. Its main purposes are:
+
+Catch coding mistakes
+Prevent unsafe actions
+Disable confusing or poorly thought-out features
+```javascript
+'use strict';
+
+// Without strict mode, this would create a global variable
+x = 3.14;  // Throws ReferenceError
+
+function example() {
+  'use strict';
+  
+  // Prevents accidental global variable creation
+  y = 10;  // Throws ReferenceError
+  
+  // Prevents using reserved keywords as variable names
+  let interface = 'hello';  // Throws SyntaxError
+  
+  // Makes eval() safer
+  eval('var z = 42');
+  console.log(z);  // Throws ReferenceError
+}
+
+example();
+```
 ### <a id="answer-37">What is object-oriented Programming?</a>
 ### <a id="answer-38">What is object-oriented Programming?</a>
 ### <a id="answer-39">What is object-oriented Programming?</a>
-### <a id="answer-40">What is object-oriented Programming?</a>
+### <a id="answer-40">What is the difference between call(), apply(), and bind()?</a>
+
+The main differences between call(), apply(), and bind() are:
+
+call(): Invokes a function with a specified 'this' context and arguments passed individually.
+apply(): Similar to call(), but arguments are passed as an array.
+bind(): Returns a new function with a fixed 'this' context, without invoking it immediately.
+
+Example:
+```javascript
+const person = { name: 'John' };
+
+function greet(greeting, punctuation) {
+  console.log(`${greeting}, ${this.name}${punctuation}`);
+}
+
+// call()
+greet.call(person, 'Hello', '!');  // Output: Hello, John!
+
+// apply()
+greet.apply(person, ['Hi', '?']);  // Output: Hi, John?
+
+// bind()
+const boundGreet = greet.bind(person);
+boundGreet('Hey', '.');  // Output: Hey, John.
+```
 ### <a id="answer-41">What is object-oriented Programming?</a>
 ### <a id="answer-42">What is object-oriented Programming?</a>
 ### <a id="answer-43">What is object-oriented Programming?</a>
