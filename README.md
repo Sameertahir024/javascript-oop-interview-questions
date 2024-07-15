@@ -5,7 +5,8 @@
 | No  | Questions                                                                                                    |
 | --- | ------------------------------------------------------------------------------------------------------------ |
 | 1   | [What is object-oriented Programming?](#answer-1)                                                            |
-| 2   | [How does JavaScript support OOP?](#answer-2)                                                                |
+| 2   | [How does JavaScript support OOP?](#answer-2)      
+| 3   | [What is the difference between OOP and SOP?](#answer-92)                              
 | 4   | [Why is OOPs so popular?](#answer-49)|
 | 5   | [What are the four main principles of OOP?](#answer-3)    
 | 6   | [How do you implement Inheritance in JavaScript?](#answer-17)                                               |
@@ -52,7 +53,6 @@
 | 47  | [How do you implement the Iterator pattern in JavaScript?](#answer-71)                                       |
 | 48  | [What is the difference between Object and Map?](#answer-82)                                                 |
 | 49  | [What is a Static Method in JavaScript?](#answer-92)                                   |
-| 50  | [What is the difference between OOP and SOP?](#answer-92)                                   |
 
 
 ## Answers
@@ -111,6 +111,79 @@ myCar.drive(); // Outputs: Driving a Toyota
 
 
 ### <a id="answer-3">Why is OOPs so popular?</a>
+The main differences between Object-Oriented Programming (OOP) and Structured Oriented Programming (SOP) are:
+
+Organization:
+
+OOP: Organizes code into objects
+SOP: Organizes code into functions and procedures
+
+
+Data handling:
+
+OOP: Data and methods are bundled together
+SOP: Data and functions are separate
+
+
+Modularity:
+
+OOP: High modularity through objects and classes
+SOP: Modularity through functions, but less flexible
+
+
+Reusability:
+
+OOP: High reusability through inheritance
+SOP: Limited reusability, mainly through function calls
+
+
+Data security:
+
+OOP: Encapsulation provides better data security
+SOP: Less control over data access
+
+
+
+Example contrasting OOP and SOP approaches:
+```javascript
+class BankAccount {
+  constructor(balance) {
+    this.balance = balance;
+  }
+
+  deposit(amount) {
+    this.balance += amount;
+  }
+
+  withdraw(amount) {
+    if (amount <= this.balance) {
+      this.balance -= amount;
+    }
+  }
+}
+
+const account = new BankAccount(1000);
+account.deposit(500);
+account.withdraw(200);
+```
+## SOP:
+```javascript
+let balance = 1000;
+
+function deposit(amount) {
+  balance += amount;
+}
+
+function withdraw(amount) {
+  if (amount <= balance) {
+    balance -= amount;
+  }
+}
+
+deposit(500);
+withdraw(200);
+```
+### <a id="answer-4">Why is OOPs so popular?</a>
 OOP (Object-Oriented Programming) is popular for several key reasons:
 
 1.Modularity: Code is organized into reusable objects.
