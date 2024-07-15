@@ -113,12 +113,17 @@ myCar.drive(); // Outputs: Driving a Toyota
 ### <a id="answer-3">Why is OOPs so popular?</a>
 OOP (Object-Oriented Programming) is popular for several key reasons:
 
-Modularity: Code is organized into reusable objects.
-Maintainability: Easier to update and modify isolated parts of code.
-Scalability: Supports building large, complex systems.
-Code reusability: Objects can be reused across projects.
-Abstraction: Hides complex implementation details.
-Real-world modeling: Aligns with how we think about real-world entities.
+1.Modularity: Code is organized into reusable objects.
+
+2.Maintainability: Easier to update and modify isolated parts of code.
+
+3.Scalability: Supports building large, complex systems.
+
+4.Code reusability: Objects can be reused across projects.
+
+5.Abstraction: Hides complex implementation details.
+
+5.Real-world modeling: Aligns with how we think about real-world entities.
 
 
 ### <a id="answer-3">What are the four main principles of OOP?</a>
