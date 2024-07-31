@@ -56,7 +56,7 @@
 
 ## Answers
 
-## 1. <a id="answer-1">What is object-oriented Programming?</a> ##
+## 1. <a id="answer-1">What is object-oriented Programming?</a> 
 Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
 
 ```javascript
