@@ -77,7 +77,7 @@ const myCar = new Car("Toyota", "Corolla");
 console.log(myCar.displayInfo()); // Output: Toyota Corolla
 ```
 
-[↑ Go back](#question-1)
+[Back to top](#table-of-contents)
 
 ### <a id="answer-2">How does JavaScript support OOP??</a>
 
