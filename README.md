@@ -102,7 +102,7 @@ myCar.drive(); // Outputs: Driving a Toyota
 
 [↑ Back to top](#table-of-contents)
 
-## <a id="answer-3">Why is OOPs so popular?</a>
+## 3. <a id="answer-3">Why is OOPs so popular?</a>
 OOP (Object-Oriented Programming) is popular for several key reasons:
 1. **Modularity:** Code is organized into reusable objects.
 2. **Maintainability:** Easier to update and modify isolated parts of code.
@@ -112,7 +112,7 @@ OOP (Object-Oriented Programming) is popular for several key reasons:
    
 [↑ Back to top](#table-of-contents)
 
-## <a id="answer-4">What is the difference between OOP and SOP?</a>
+## 4. <a id="answer-4">What is the difference between OOP and SOP?</a>
 The main differences between Object-Oriented Programming (OOP) and Structured Oriented Programming (SOP) are:
 **Organization:**
 OOP: Organizes code into objects
@@ -184,7 +184,7 @@ deposit(500);
 withdraw(200);
 ```
 
-## <a id="answer-5">What are the four main principles of OOP?</a>
+## 5. <a id="answer-5">What are the four main principles of OOP?</a>
 The four main principles of Object-Oriented Programming (OOP) are:
 1. **Encapsulation:** Bundling data and methods that operate on that data within a single unit (class).
 2. **Inheritance:** Ability of a class to derive properties and characteristics from another class.
@@ -222,7 +222,7 @@ dog.speak(); // Rex barks.
 ```
 [↑ Back to top](#table-of-contents)
 
-## <a id="answer-7"> How do you implement Polymorphism in JavaScript?</a>
+## 7. <a id="answer-7"> How do you implement Polymorphism in JavaScript?</a>
 Polymorphism in JavaScript can be implemented through method overriding. Different classes can define methods with the same name, and the appropriate method is called based on the object's type.
 ```javascript
 class Animal {
@@ -253,7 +253,7 @@ animals.forEach(animal => animal.speak());
 ```
 [↑ Back to top](#table-of-contents)
 
-## <a id="answer-8">How do you implement Encapsulation in JavaScript?</a>
+## 8. <a id="answer-8">How do you implement Encapsulation in JavaScript?</a>
 Encapsulation in JavaScript can be achieved using closures or ES6 classes with private fields (prefixed with #).
 ```javascript
 class Person {
@@ -283,7 +283,7 @@ console.log(person.getAge()); // 31
 ```
 [↑ Back to top](#table-of-contents)
 
-## <a id="answer-9">How do you implement Abstraction in JavaScript??</a>
+## 9. <a id="answer-9">How do you implement Abstraction in JavaScript??</a>
 Abstraction in JavaScript can be implemented by defining methods in a base class that are overridden by derived classes, hiding the complex details and exposing only the necessary parts.
 ```javascript
 class Employee {
@@ -315,10 +315,9 @@ console.log(dev.getDetails()); // Alice is a Frontend Developer
 
 ```
 
-## <a id="answer-10">How do you create an object in JavaScript?</a>
+## 10. <a id="answer-10">How do you create an object in JavaScript?</a>
 In JavaScript, there are several ways to create an object. Here are a few common methods:
-
-## 1. Using Object Literal Syntax
+**1. Object Literal Syntax**
 ```javascript
 const person = {
     name: 'John',
@@ -330,7 +329,7 @@ const person = {
 
 person.greet(); // Output: Hello, John
 ```
-## 2. Using the new Object() Syntax
+ **2. new Object() Syntax**
 ```javascript
 const person = new Object();
 person.name = 'John';
@@ -342,7 +341,7 @@ person.greet = function() {
 person.greet(); // Output: Hello, John
 
 ```
-## 3. Using a Constructor Function
+**3. Constructor Function**
 ```javascript
 function Person(name, age) {
     this.name = name;
@@ -356,7 +355,7 @@ const person = new Person('John', 30);
 person.greet(); // Output: Hello, John
 
 ```
-## 4. Using ES6 Classes
+**4. ES6 Classes**
 ```javascript
 class Person {
     constructor(name, age) {
