@@ -6,24 +6,24 @@
 | --- | ------------------------------------------------------------------------------------------------------------ |
 | 1   | [What is object-oriented Programming?](#answer-1)                                                            |
 | 2   | [How does JavaScript support OOP?](#answer-2)      
-| 3   | [What is the difference between OOP and SOP?](#answer-92)                              
-| 4   | [Why is OOPs so popular?](#answer-49)|
-| 5   | [What are the four main principles of OOP?](#answer-3)    
-| 6   | [How do you implement Inheritance in JavaScript?](#answer-17)                                               |
-| 7   | [How do you implement polymorphism in JavaScript?](#answer-17)                                               |
-| 8   | [How do you implement Encapsulation in JavaScript?](#answer-17)                                               |
-| 9   | [How do you implement abstraction in JavaScript?](#answer-17)                                               |
-| 10  | [How do you create an object in JavaScript?](#answer-4)                                                      |
-| 11  | [What is a prototype in JavaScript?](#answer-6)                                                              |
-| 12  | [How does prototypal inheritance work in JavaScript?](#answer-7)                                             |
-| 13  | [What are closures and how do they relate to OOP?](#answer-10)                                               |
-| 14  | [What is the 'this' keyword in JavaScript and how does it work in different contexts?](#answer-12)           |
-| 15  | [What are ES6 classes and how do they work?](#answer-13)                                                     |
-| 16  | [How do you create private and public methods in JavaScript?](#answer-14)                                    |
-| 17  | [What is the difference between function declaration and function expression?](#answer-15)                   |
-| 18  | [What is method chaining and how can you implement it?](#answer-16)                                          |
-| 19  | [What are getters and setters in JavaScript?](#answer-18)                                                    |
-| 20  | [How does the 'new' keyword work in JavaScript?](#answer-19)                                                 |
+| 3   | [What is the difference between OOP and SOP?](#answer-3)                              
+| 4   | [Why is OOPs so popular?](#answer-4)|
+| 5   | [What are the four main principles of OOP?](#answer-5)    
+| 6   | [How do you implement Inheritance in JavaScript?](#answer-6)                                               |
+| 7   | [How do you implement polymorphism in JavaScript?](#answer-7)                                               |
+| 8   | [How do you implement Encapsulation in JavaScript?](#answer-8)                                               |
+| 9   | [How do you implement abstraction in JavaScript?](#answer-9)                                               |
+| 10  | [How do you create an object in JavaScript?](#answer-10)                                                      |
+| 11  | [What is a prototype in JavaScript?](#answer-11)                                                              |
+| 12  | [How does prototypal inheritance work in JavaScript?](#answer-12)                                             |
+| 13  | [What are closures and how do they relate to OOP?](#answer-13)                                               |
+| 14  | [What is the 'this' keyword in JavaScript and how does it work in different contexts?](#answer-14)           |
+| 15  | [What are ES6 classes and how do they work?](#answer-15)                                                     |
+| 16  | [How do you create private and public methods in JavaScript?](#answer-16)                                    |
+| 17  | [What is the difference between function declaration and function expression?](#answer-17)                   |
+| 18  | [What is method chaining and how can you implement it?](#answer-18)                                          |
+| 19  | [What are getters and setters in JavaScript?](#answer-19)                                                    |
+| 20  | [How does the 'new' keyword work in JavaScript?](#answer-20)                                                 |
 | 21  | [How do you implement multiple inheritance in JavaScript?](#answer-21)                                       |
 | 22  | [What is the purpose of the constructor method in a class?](#answer-22)                                      |
 | 23  | [How do you use the 'super' keyword in JavaScript?](#answer-23)                                              |
@@ -31,27 +31,27 @@
 | 25  | [How do you implement a Singleton pattern in JavaScript?](#answer-25)                                        |
 | 26  | [What is the Module pattern in JavaScript?](#answer-26)                                                      |
 | 27  | [How do you implement the Observer pattern in JavaScript?](#answer-27)                                       |
-| 28  | [What is the difference between Object.create() and the new keyword?](#answer-20)                            |
+| 28  | [What is the difference between Object.create() and the new keyword?](#answer-28)                            |
 | 29  | [How do you implement method overloading in JavaScript?](#answer-29)                                         |
 | 30  | [What is the difference between static and instance methods?](#answer-30)                                    |
 | 31  | [How do you use Symbol to create truly private properties?](#answer-31)                                      |
-| 32  | [What is the purpose of the 'use strict' directive in JavaScript?](#answer-36)                               |
-| 33  | [What is the difference between deep and shallow copying of objects?](#answer-38)                            |
-| 34  | [How do you implement method borrowing in JavaScript?](#answer-39)                                           |
-| 35  | [What is the difference between call(), apply(), and bind()?](#answer-40)                                    |
-| 36  | [What is the difference between Object.assign and Object.create in JavaScript?](#answer-41)                                    |
-| 37  | [What is SOLID and how does it apply to JavaScript?](#answer-42)                                             |
-| 38  | [What is the difference between abstract classes and interfaces in JavaScript?](#answer-44)                  |
-| 39  | [What is the instanceof operator in JavaScript??](#answer-46)                                                |
-| 40  | [What is the difference between for...in and for...of loops when dealing with objects?](#answer-48)          |
-| 41  | [What are the different types of inheritance?](#answer-49)    
-| 42  | [What is the difference between overloading and overriding?](#answer-)          
-| 43  | [What is the difference between **proto** and prototype?](#answer-52)                                        |
-| 44  | [What is the difference between instance properties and prototype properties?](#answer-54)                   |
-| 45  | [What is the purpose of the instanceof operator?](#answer-56)                                                |
-| 46  | [How do you implement method overriding in JavaScript?](#answer-57)                                          |
-| 48  | [What is the difference between Object and Map?](#answer-82)                                                 |
-| 49  | [What is a Static Method in JavaScript?](#answer-92)                                   |
+| 32  | [What is the purpose of the 'use strict' directive in JavaScript?](#answer-32)                               |
+| 33  | [What is the difference between deep and shallow copying of objects?](#answer-33)                            |
+| 34  | [How do you implement method borrowing in JavaScript?](#answer-34)                                           |
+| 35  | [What is the difference between call(), apply(), and bind()?](#answer-35)                                    |
+| 36  | [What is the difference between Object.assign and Object.create in JavaScript?](#answer-36)                                    |
+| 37  | [What is SOLID and how does it apply to JavaScript?](#answer-37)                                             |
+| 38  | [What is the difference between abstract classes and interfaces in JavaScript?](#answer-38)                  |
+| 39  | [What is the instanceof operator in JavaScript??](#answer-39)                                                |
+| 40  | [What is the difference between for...in and for...of loops when dealing with objects?](#answer-40)          |
+| 41  | [What are the different types of inheritance?](#answer-41)    
+| 42  | [What is the difference between overloading and overriding?](#answer-42)          
+| 43  | [What is the difference between **proto** and prototype?](#answer-43)                                        |
+| 44  | [What is the difference between instance properties and prototype properties?](#answer-44)                   |
+| 45  | [What is the purpose of the instanceof operator?](#answer-45)                                                |
+| 46  | [How do you implement method overriding in JavaScript?](#answer-46)                                          |
+| 47  | [What is the difference between Object and Map?](#answer-47)                                                 |
+| 48  | [What is a Static Method in JavaScript?](#answer-47)                                   |
 
 
 ## Answers
