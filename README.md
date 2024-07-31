@@ -317,6 +317,7 @@ console.log(dev.getDetails()); // Alice is a Frontend Developer
 
 ## 10. <a id="answer-10">How do you create an object in JavaScript?</a>
 In JavaScript, there are several ways to create an object. Here are a few common methods:
+
 **1. Object Literal Syntax**
 ```javascript
 const person = {
