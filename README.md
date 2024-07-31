@@ -75,7 +75,7 @@ console.log(myCar.displayInfo()); // Output: Toyota Corolla
 
 [Back to top](#table-of-contents)
 
-### <a id="answer-2">How does JavaScript support OOP??</a>
+## 2. <a id="answer-2">How does JavaScript support OOP??</a>
 
 JavaScript supports Object-Oriented Programming (OOP) through:
 
@@ -84,7 +84,6 @@ JavaScript supports Object-Oriented Programming (OOP) through:
 3:Prototypes
 4:Inheritance
 
-Example using a class:
 ```javascript
 class Car {
   constructor(brand) {
