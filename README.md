@@ -103,7 +103,7 @@ myCar.drive(); // Outputs: Driving a Toyota
 [↑ Back to top](#table-of-contents)
 
 
-### <a id="answer-3">Why is OOPs so popular?</a>
+## <a id="answer-3">Why is OOPs so popular?</a>
 The main differences between Object-Oriented Programming (OOP) and Structured Oriented Programming (SOP) are:
 
 Organization:
@@ -178,7 +178,6 @@ withdraw(200);
 ```
 ### <a id="answer-4">Why is OOPs so popular?</a>
 OOP (Object-Oriented Programming) is popular for several key reasons:
-
 1.**Modularity:** Code is organized into reusable objects.
 2.**Maintainability:** Easier to update and modify isolated parts of code.
 3.**Scalability:** Supports building large, complex systems.
