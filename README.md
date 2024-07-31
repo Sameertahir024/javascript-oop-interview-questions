@@ -200,6 +200,137 @@ OOP (Object-Oriented Programming) is popular for several key reasons:
 
 ### <a id="answer-3">What are the four main principles of OOP?</a>
 
+The four main principles of Object-Oriented Programming (OOP) are:
+
+1:Encapsulation: Bundling data and methods that operate on that data within a single unit (class).
+
+2:Inheritance: Ability of a class to derive properties and characteristics from another class.
+
+3:Polymorphism: Ability of objects to take on multiple forms and behave differently based on context.
+
+4:Abstraction: Hiding complex implementation details and showing only essential features of an object.
+
+
+#### 1. How do you implement Inheritance in JavaScript?
+Inheritance in JavaScript can be implemented using the `extends` keyword in classes. This allows a class to inherit properties and methods from another class.
+
+```javascript
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(`${this.name} makes a noise.`);
+  }
+}
+
+class Dog extends Animal {
+  constructor(name) {
+    super(name);
+  }
+
+  speak() {
+    console.log(`${this.name} barks.`);
+  }
+}
+
+const dog = new Dog('Rex');
+dog.speak(); // Rex barks.
+```
+
+
+### <a id="answer-4"> How do you implement Polymorphism in JavaScript?</a>
+Polymorphism in JavaScript can be implemented through method overriding. Different classes can define methods with the same name, and the appropriate method is called based on the object's type.
+```javascript
+class Animal {
+  speak() {
+    console.log('Animal makes a noise.');
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    console.log('Dog barks.');
+  }
+}
+
+class Cat extends Animal {
+  speak() {
+    console.log('Cat meows.');
+  }
+}
+
+const animals = [new Dog(), new Cat()];
+
+animals.forEach(animal => animal.speak());
+// Output:
+// Dog barks.
+// Cat meows.
+
+```
+
+
+### <a id="answer-4">How do you implement Encapsulation in JavaScript?</a>
+Encapsulation in JavaScript can be achieved using closures or ES6 classes with private fields (prefixed with #).
+```javascript
+class Person {
+  #age;
+
+  constructor(name, age) {
+    this.name = name;
+    this.#age = age;
+  }
+
+  getAge() {
+    return this.#age;
+  }
+
+  setAge(age) {
+    if (age > 0) {
+      this.#age = age;
+    }
+  }
+}
+
+const person = new Person('John', 30);
+console.log(person.getAge()); // 30
+person.setAge(31);
+console.log(person.getAge()); // 31
+
+```
+
+### <a id="answer-4">How do you implement Abstraction in JavaScript??</a>
+Abstraction in JavaScript can be implemented by defining methods in a base class that are overridden by derived classes, hiding the complex details and exposing only the necessary parts.
+```javascript
+class Employee {
+  constructor(name) {
+    if (new.target === Employee) {
+      throw new TypeError('Cannot construct Employee instances directly');
+    }
+    this.name = name;
+  }
+
+  getDetails() {
+    throw new Error('You have to implement the method getDetails!');
+  }
+}
+
+class Developer extends Employee {
+  constructor(name, role) {
+    super(name);
+    this.role = role;
+  }
+
+  getDetails() {
+    return `${this.name} is a ${this.role}`;
+  }
+}
+
+const dev = new Developer('Alice', 'Frontend Developer');
+console.log(dev.getDetails()); // Alice is a Frontend Developer
+
+```
 
 ### <a id="answer-4">How do you create an object in JavaScript?</a>
 In JavaScript, there are several ways to create an object. Here are a few common methods:
