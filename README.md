@@ -314,6 +314,7 @@ const dev = new Developer('Alice', 'Frontend Developer');
 console.log(dev.getDetails()); // Alice is a Frontend Developer
 
 ```
+[↑ Back to top](#table-of-contents)
 
 ## 10. <a id="answer-10">How do you create an object in JavaScript?</a>
 In JavaScript, there are several ways to create an object. Here are a few common methods:
@@ -374,9 +375,12 @@ person.greet(); // Output: Hello, John
 
 
 ```
+[↑ Back to top](#table-of-contents)
 
-### <a id="answer-5">What is the difference between object literal notation and constructor function?</a>
-## Object Literal Notation
+## 11. <a id="answer-11">What is the difference between object literal notation and constructor function?</a>
+
+**Object Literal Notation**
+
 Object literal notation is a simple and concise way to create objects in JavaScript. It is best suited for creating single objects or objects that do not require a blueprint.
 ```javascript
 const person = {
@@ -389,8 +393,9 @@ const person = {
 
 person.greet(); // Output: Hello, John
 ```
-## Constructor Function
-Definition: A constructor function is a template for creating multiple objects with the same properties and methods. It uses the function keyword and can be instantiated using the new keyword.
+**Constructor Function**
+
+A constructor function is a template for creating multiple objects with the same properties and methods. It uses the function keyword and can be instantiated using the new keyword.
 ```javascript
 function Person(name, age) {
     this.name = name;
@@ -403,9 +408,10 @@ function Person(name, age) {
 const person1 = new Person('John', 30);
 
 ```
+[↑ Back to top](#table-of-contents)
 
+## 11. <a id="answer-11">What is a prototype in JavaScript?</a>
 
-### <a id="answer-6">What is a prototype in JavaScript?</a>
 In JavaScript, every object has a prototype. A prototype is an object from which other objects inherit properties and methods. Prototypes allow you to add properties and methods to objects after they are created, which enables inheritance and the reuse of code.
 ```javascript
 // Constructor function
@@ -427,12 +433,56 @@ person1.greet(); // Output: Hello, John
 person2.greet(); // Output: Hello, Jane
 
 ```
+[↑ Back to top](#table-of-contents)
 
-### <a id="answer-7">How does prototypal inheritance work in JavaScript?</a>
+## 12. <a id="answer-13">How does prototypal inheritance work in JavaScript?</a>
 pending................................
-### <a id="answer-8">What is the difference between classical inheritance and prototypal inheritance?</a>
-pending........................
-### <a id="answer-9">What is object-oriented Programming?</a>
+## 13. <a id="answer-13">What are closures and how do they relate to OOP?</a>
+
+**Closures:**
+A closure is a function that has access to variables in its outer (enclosing) lexical scope, even after the outer function has returned.
+
+**Relation to OOP:**
+**Encapsulation:** Closures can be used to create private variables and methods, mimicking encapsulation in OOP.
+Data hiding: They allow for information hiding, a key principle in OOP.
+**State preservation:** Closures can maintain state between function calls, similar to object properties.
+
+```javascript
+function createCounter() {
+  let count = 0;
+
+  return {
+    increment: function() {
+      count++;
+      return count;
+    },
+    decrement: function() {
+      count--;
+      return count;
+    },
+    getCount: function() {
+      return count;
+    }
+  };
+}
+
+const counter = createCounter();
+console.log(counter.increment()); // 1
+console.log(counter.increment()); // 2
+console.log(counter.decrement()); // 1
+console.log(counter.getCount());  // 1
+
+```
+## 14. <a id="answer-14">What is the 'this' keyword in JavaScript and how does it work in different contexts?</a>
+The `this` keyword in JavaScript refers to the current execution context. Its value can change depending on how a function is called. 
+```javascript
+function Person(name) {
+  this.name = name;
+}
+const john = new Person('John');
+console.log(john.name); // 'John'
+
+```
 ### <a id="answer-10">What is object-oriented Programming?</a>
 ### <a id="answer-11">What is object-oriented Programming?</a>
 ### <a id="answer-12">What is object-oriented Programming?</a>
