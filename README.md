@@ -73,17 +73,16 @@ const myCar = new Car("Toyota", "Corolla");
 console.log(myCar.displayInfo()); // Output: Toyota Corolla
 ```
 
-[Back to top](#table-of-contents)
 
-## 2. <a id="answer-2">How does JavaScript support OOP??</a>
+[↑ Back to top](#table-of-contents)
 
-JavaScript supports Object-Oriented Programming (OOP) through:
+## 2. <a id="answer-2">How does JavaScript support OOP?</a>
 
+JavaScript supports Object-Oriented Programming (OOP) through
      1. Objects
      2. Classes (ES6+)
      3. Prototypes
      5. Inheritance
-     
 ```javascript
 class Car {
   constructor(brand) {
@@ -100,8 +99,7 @@ myCar.drive(); // Outputs: Driving a Toyota
 
 ```
 
-[↑ Go back](#question-2)
-
+[↑ Back to top](#table-of-contents)
 
 
 ### <a id="answer-3">Why is OOPs so popular?</a>
