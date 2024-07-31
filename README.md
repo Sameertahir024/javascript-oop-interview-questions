@@ -53,12 +53,8 @@
 | 47  | [What is the difference between Object and Map?](#answer-47)                                                 |
 | 48  | [What is a Static Method in JavaScript?](#answer-47)                                   |
 
-
-## Answers
-
 ## 1. <a id="answer-1">What is object-oriented Programming?</a> 
 Object-oriented programming (OOP) is a way to structure code by creating objects, which are instances of classes. A class defines the properties and methods that its objects will have, making the code more organized and reusable.
-
 ```javascript
 // Define a class
 class Car {
