@@ -505,16 +505,70 @@ In JavaScript, you can create private and public methods using classes and closu
 ```javascript
 
 ```
-### <a id="answer-12">What is object-oriented Programming?</a>
-### <a id="answer-13">What is object-oriented Programming?</a>
-### <a id="answer-14">What is object-oriented Programming?</a>
-### <a id="answer-15">What is object-oriented Programming?</a>
-### <a id="answer-16">What is object-oriented Programming?</a>
-### <a id="answer-17">What is object-oriented Programming?</a>
-### <a id="answer-18">What are getters and setters in JavaScript?</a>
+## 17. <a id="answer-17">What is the difference between function declaration and function expression?</a>
+
+Function declarations and function expressions are two ways to define functions in JavaScript. Here are their definitions and key differences:
+
+**Function Declaration:**
+Definition: A function defined as a separate statement in the main code flow.
+```javascript
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+```
+**Function Expression:**
+Definition: A function defined and assigned within an expression, often as part of a variable assignment.
+```javascript
+const greet = function(name) {
+  return `Hello, ${name}!`;
+};
+
+```
+## 18. <a id="answer-18">What is method chaining and how can you implement it?</a>
+Method chaining is a technique in object-oriented programming where multiple methods are called on the same object consecutively in a single statement. Each method returns the object itself, allowing the next method to be called on it. This can make the code more readable and concise.
+```javascript
+class Calculator {
+  constructor() {
+    this.value = 0;
+  }
+
+  add(number) {
+    this.value += number;
+    return this; // Return the instance for chaining
+  }
+
+  subtract(number) {
+    this.value -= number;
+    return this; // Return the instance for chaining
+  }
+
+  multiply(number) {
+    this.value *= number;
+    return this; // Return the instance for chaining
+  }
+
+  divide(number) {
+    if (number !== 0) {
+      this.value /= number;
+    }
+    return this; // Return the instance for chaining
+  }
+
+  getResult() {
+    return this.value;
+  }
+}
+
+const calculator = new Calculator();
+const result = calculator.add(10).subtract(2).multiply(3).divide(2).getResult();
+console.log(result); // 12
+
+```
+## 19. <a id="answer-19">What are getters and setters in JavaScript?</a>
 In JavaScript, getters and setters are special methods that allow you to define the behavior of accessing and setting values on an object's properties.
 
-Getter: A getter is a method that gets the value of a specific property. It is defined using the get keyword followed by a function. When you access the property, the getter function is executed, and its return value is used as the property value.
+**Getter:**
+A getter is a method that gets the value of a specific property. It is defined using the get keyword followed by a function. When you access the property, the getter function is executed, and its return value is used as the property value.
 ```javascript
 const obj = {
     get fullName() {
@@ -527,7 +581,8 @@ const obj = {
 console.log(obj.fullName); // Outputs: "John Doe"
 
 ```
-Setter: A setter is a method that sets the value of a specific property. It is defined using the set keyword followed by a function that takes a parameter representing the new value. When you assign a value to the property, the setter function is called with the assigned value.
+**Setter:**
+A setter is a method that sets the value of a specific property. It is defined using the set keyword followed by a function that takes a parameter representing the new value. When you assign a value to the property, the setter function is called with the assigned value.
 ```javascript
 const obj = {
     firstName: 'John',
@@ -546,9 +601,8 @@ console.log(obj.lastName); // Outputs: "Smith"
 
 ```
 
-### <a id="answer-19">How does the 'new' keyword work in JavaScript?</a>
-In JavaScript, the new keyword is used to create an instance of a user-defined object type (often called a constructor function) or a built-in object type that has a constructor function. Here's how it works:
-
+## 20. <a id="answer-20">How does the 'new' keyword work in JavaScript?</a>
+In JavaScript, the `new` keyword is used to create an instance of a user-defined object type (often called a constructor function) or a built-in object type that has a constructor function. 
 Creating an Instance: When you use new with a constructor function, it creates a new object instance. This new instance inherits properties and methods defined on the constructor's prototype.
 ```javascript
 function Person(name, age) {
@@ -598,13 +652,12 @@ const john = new Person('John');
 
 pending...................
 ### <a id="answer-22">What is the purpose of the constructor method in a class?</a>
+
 Purpose of the Constructor Method in a Class:
-1: Initialization: Sets up initial values for object properties.
-
-2: State Setup: Establishes the initial state of the object.
-
-3: Binding: Binds methods to the instance.
-3: Inheritance: Calls super() to initialize properties from a parent class.
+1. **Initialization:** Sets up initial values for object properties.
+2. **State Setup:** Establishes the initial state of the object.
+3. **Binding:** Binds methods to the instance.
+4. **Inheritance:** Calls super() to initialize properties from a parent class.
 ```javascript
 class Person {
     // Constructor method
@@ -619,11 +672,11 @@ console.log(john.name); // Outputs: "John"
 console.log(john.age); // Outputs: 30
 
 ```
-### <a id="answer-23">How do you use the 'super' keyword in JavaScript?</a>
+## <a id="answer-23">How do you use the 'super' keyword in JavaScript?</a>
 Purpose of the super Keyword in JavaScript:
-## Constructor Calls:
+**Constructor Calls:**
 Allows calling the constructor of a parent class from within a subclass constructor to initialize inherited properties.
-## Method Calls:
+**Method Calls:**
 Facilitates invoking methods from the parent class within subclass methods to extend or override their behavior.
 ```javascript
 // Parent class
