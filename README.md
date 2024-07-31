@@ -6,8 +6,8 @@
 | --- | ------------------------------------------------------------------------------------------------------------ |
 | 1   | [What is object-oriented Programming?](#answer-1)                                                            |
 | 2   | [How does JavaScript support OOP?](#answer-2)      
-| 3   | [What is the difference between OOP and SOP?](#answer-3)                              
-| 4   | [Why is OOPs so popular?](#answer-4)|
+| 4   | [Why is OOPs so popular?](#answer-3)|
+| 3   | [What is the difference between OOP and SOP?](#answer-4)                              
 | 5   | [What are the four main principles of OOP?](#answer-5)    
 | 6   | [How do you implement Inheritance in JavaScript?](#answer-6)                                               |
 | 7   | [How do you implement polymorphism in JavaScript?](#answer-7)                                               |
@@ -179,17 +179,12 @@ withdraw(200);
 ### <a id="answer-4">Why is OOPs so popular?</a>
 OOP (Object-Oriented Programming) is popular for several key reasons:
 
-1.Modularity: Code is organized into reusable objects.
-
-2.Maintainability: Easier to update and modify isolated parts of code.
-
-3.Scalability: Supports building large, complex systems.
-
-4.Code reusability: Objects can be reused across projects.
-
-5.Abstraction: Hides complex implementation details.
-
-5.Real-world modeling: Aligns with how we think about real-world entities.
+1.**Modularity:** Code is organized into reusable objects.
+2.**Maintainability:** Easier to update and modify isolated parts of code.
+3.**Scalability:** Supports building large, complex systems.
+4.**Code reusability:** Objects can be reused across projects.
+5.**Abstraction:** Hides complex implementation details.
+6.**Real-world modeling:** Aligns with how we think about real-world entities.
 
 
 ### <a id="answer-3">What are the four main principles of OOP?</a>
