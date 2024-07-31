@@ -6,8 +6,8 @@
 | --- | ------------------------------------------------------------------------------------------------------------ |
 | 1   | [What is object-oriented Programming?](#answer-1)                                                            |
 | 2   | [How does JavaScript support OOP?](#answer-2)      
-| 4   | [Why is OOPs so popular?](#answer-3)|
-| 3   | [What is the difference between OOP and SOP?](#answer-4)                              
+| 3   | [Why is OOPs so popular?](#answer-3)|
+| 4   | [What is the difference between OOP and SOP?](#answer-4)                              
 | 5   | [What are the four main principles of OOP?](#answer-5)    
 | 6   | [How do you implement Inheritance in JavaScript?](#answer-6)                                               |
 | 7   | [How do you implement polymorphism in JavaScript?](#answer-7)                                               |
@@ -102,12 +102,19 @@ myCar.drive(); // Outputs: Driving a Toyota
 
 [↑ Back to top](#table-of-contents)
 
-
 ## <a id="answer-3">Why is OOPs so popular?</a>
+OOP (Object-Oriented Programming) is popular for several key reasons:
+1. **Modularity:** Code is organized into reusable objects.
+2. **Maintainability:** Easier to update and modify isolated parts of code.
+3. **Scalability:** Supports building large, complex systems.
+4. **Code reusability:** Objects can be reused across projects.
+5. **Abstraction:** Hides complex implementation details.
+   
+[↑ Back to top](#table-of-contents)
+
+## <a id="answer-4">What is the difference between OOP and SOP?</a>
 The main differences between Object-Oriented Programming (OOP) and Structured Oriented Programming (SOP) are:
-
-Organization:
-
+**Organization:**
 OOP: Organizes code into objects
 SOP: Organizes code into functions and procedures
 
@@ -176,31 +183,19 @@ function withdraw(amount) {
 deposit(500);
 withdraw(200);
 ```
-## <a id="answer-4">Why is OOPs so popular?</a>
-OOP (Object-Oriented Programming) is popular for several key reasons:
-1. **Modularity:** Code is organized into reusable objects.
-2. **Maintainability:** Easier to update and modify isolated parts of code.
-3. **Scalability:** Supports building large, complex systems.
-4. **Code reusability:** Objects can be reused across projects.
-5. **Abstraction:** Hides complex implementation details.
-   
-[↑ Back to top](#table-of-contents)
-### <a id="answer-3">What are the four main principles of OOP?</a>
 
+## <a id="answer-5">What are the four main principles of OOP?</a>
 The four main principles of Object-Oriented Programming (OOP) are:
-
-1:Encapsulation: Bundling data and methods that operate on that data within a single unit (class).
-
-2:Inheritance: Ability of a class to derive properties and characteristics from another class.
-
-3:Polymorphism: Ability of objects to take on multiple forms and behave differently based on context.
-
-4:Abstraction: Hiding complex implementation details and showing only essential features of an object.
+1. **Encapsulation:** Bundling data and methods that operate on that data within a single unit (class).
+2. **Inheritance:** Ability of a class to derive properties and characteristics from another class.
+3.**Polymorphism:** Ability of objects to take on multiple forms and behave differently based on context.
+4. **Abstraction:** Hiding complex implementation details and showing only essential features of an object.
 
 
-#### 1. How do you implement Inheritance in JavaScript?
+[↑ Back to top](#table-of-contents)
+
+## 6. <a id="answer-6">How do you implement Inheritance in JavaScript??</a>
 Inheritance in JavaScript can be implemented using the `extends` keyword in classes. This allows a class to inherit properties and methods from another class.
-
 ```javascript
 class Animal {
   constructor(name) {
@@ -225,9 +220,9 @@ class Dog extends Animal {
 const dog = new Dog('Rex');
 dog.speak(); // Rex barks.
 ```
+[↑ Back to top](#table-of-contents)
 
-
-### <a id="answer-4"> How do you implement Polymorphism in JavaScript?</a>
+## <a id="answer-7"> How do you implement Polymorphism in JavaScript?</a>
 Polymorphism in JavaScript can be implemented through method overriding. Different classes can define methods with the same name, and the appropriate method is called based on the object's type.
 ```javascript
 class Animal {
@@ -256,9 +251,9 @@ animals.forEach(animal => animal.speak());
 // Cat meows.
 
 ```
+[↑ Back to top](#table-of-contents)
 
-
-### <a id="answer-4">How do you implement Encapsulation in JavaScript?</a>
+## <a id="answer-8">How do you implement Encapsulation in JavaScript?</a>
 Encapsulation in JavaScript can be achieved using closures or ES6 classes with private fields (prefixed with #).
 ```javascript
 class Person {
@@ -286,8 +281,9 @@ person.setAge(31);
 console.log(person.getAge()); // 31
 
 ```
+[↑ Back to top](#table-of-contents)
 
-### <a id="answer-4">How do you implement Abstraction in JavaScript??</a>
+## <a id="answer-9">How do you implement Abstraction in JavaScript??</a>
 Abstraction in JavaScript can be implemented by defining methods in a base class that are overridden by derived classes, hiding the complex details and exposing only the necessary parts.
 ```javascript
 class Employee {
@@ -319,7 +315,7 @@ console.log(dev.getDetails()); // Alice is a Frontend Developer
 
 ```
 
-### <a id="answer-4">How do you create an object in JavaScript?</a>
+## <a id="answer-10">How do you create an object in JavaScript?</a>
 In JavaScript, there are several ways to create an object. Here are a few common methods:
 
 ## 1. Using Object Literal Syntax
