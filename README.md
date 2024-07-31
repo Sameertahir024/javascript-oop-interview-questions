@@ -188,7 +188,7 @@ withdraw(200);
 The four main principles of Object-Oriented Programming (OOP) are:
 1. **Encapsulation:** Bundling data and methods that operate on that data within a single unit (class).
 2. **Inheritance:** Ability of a class to derive properties and characteristics from another class.
-3.**Polymorphism:** Ability of objects to take on multiple forms and behave differently based on context.
+3. **Polymorphism:** Ability of objects to take on multiple forms and behave differently based on context.
 4. **Abstraction:** Hiding complex implementation details and showing only essential features of an object.
 
 
