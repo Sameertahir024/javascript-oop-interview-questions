@@ -483,8 +483,28 @@ const john = new Person('John');
 console.log(john.name); // 'John'
 
 ```
-### <a id="answer-10">What is object-oriented Programming?</a>
-### <a id="answer-11">What is object-oriented Programming?</a>
+## 15. <a id="answer-15">What are ES6 classes and how do they work?</a>
+ES6 classes, introduced in ECMAScript 2015 (ES6), provide a more intuitive and cleaner syntax for creating objects and implementing inheritance in JavaScript.
+```javascript
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  
+  sayHello() {
+    console.log(`Hello, I'm ${this.name}`);
+  }
+}
+
+```
+
+## 16. <a id="answer-16">How do you create private and public methods in JavaScript?</a>
+
+In JavaScript, you can create private and public methods using classes and closures. Private methods are not accessible outside the object, while public methods can be accessed and called from outside the object.
+
+```javascript
+
+```
 ### <a id="answer-12">What is object-oriented Programming?</a>
 ### <a id="answer-13">What is object-oriented Programming?</a>
 ### <a id="answer-14">What is object-oriented Programming?</a>
