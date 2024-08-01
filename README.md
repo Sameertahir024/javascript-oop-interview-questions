@@ -28,9 +28,6 @@
 | 22  | [What is the purpose of the constructor method in a class?](#answer-22)                                      |
 | 23  | [How do you use the 'super' keyword in JavaScript?](#answer-23)                                              |
 | 24  | [What is the difference between composition and inheritance?](#answer-24)                                    |
-| 25  | [How do you implement a Singleton pattern in JavaScript?](#answer-25)                                        |
-| 26  | [What is the Module pattern in JavaScript?](#answer-26)                                                      |
-| 27  | [How do you implement the Observer pattern in JavaScript?](#answer-27)                                       |
 | 28  | [What is the difference between Object.create() and the new keyword?](#answer-28)                            |
 | 29  | [How do you implement method overloading in JavaScript?](#answer-29)                                         |
 | 30  | [What is the difference between static and instance methods?](#answer-30)                                    |
@@ -42,14 +39,12 @@
 | 36  | [What is the difference between Object.assign and Object.create in JavaScript?](#answer-36)                                    |
 | 37  | [What is SOLID and how does it apply to JavaScript?](#answer-37)                                             |
 | 38  | [What is the difference between abstract classes and interfaces in JavaScript?](#answer-38)                  |
-| 39  | [What is the instanceof operator in JavaScript??](#answer-39)                                                |
 | 40  | [What is the difference between for...in and for...of loops when dealing with objects?](#answer-40)          |
 | 41  | [What are the different types of inheritance?](#answer-41)    
 | 42  | [What is the difference between overloading and overriding?](#answer-42)          
 | 43  | [What is the difference between **proto** and prototype?](#answer-43)                                        |
 | 44  | [What is the difference between instance properties and prototype properties?](#answer-44)                   |
 | 45  | [What is the purpose of the instanceof operator?](#answer-45)                                                |
-| 46  | [How do you implement method overriding in JavaScript?](#answer-46)                                          |
 | 47  | [What is the difference between Object and Map?](#answer-47)                                                 |
 | 48  | [What is a Static Method in JavaScript?](#answer-47)                                   |
 
@@ -473,6 +468,8 @@ console.log(counter.decrement()); // 1
 console.log(counter.getCount());  // 1
 
 ```
+[↑ Back to top](#table-of-contents)
+
 ## 14. <a id="answer-14">What is the 'this' keyword in JavaScript and how does it work in different contexts?</a>
 The `this` keyword in JavaScript refers to the current execution context. Its value can change depending on how a function is called. 
 ```javascript
@@ -481,8 +478,9 @@ function Person(name) {
 }
 const john = new Person('John');
 console.log(john.name); // 'John'
-
 ```
+[↑ Back to top](#table-of-contents)
+
 ## 15. <a id="answer-15">What are ES6 classes and how do they work?</a>
 ES6 classes, introduced in ECMAScript 2015 (ES6), provide a more intuitive and cleaner syntax for creating objects and implementing inheritance in JavaScript.
 ```javascript
@@ -497,6 +495,7 @@ class Person {
 }
 
 ```
+[↑ Back to top](#table-of-contents)
 
 ## 16. <a id="answer-16">How do you create private and public methods in JavaScript?</a>
 
@@ -505,6 +504,8 @@ In JavaScript, you can create private and public methods using classes and closu
 ```javascript
 
 ```
+[↑ Back to top](#table-of-contents)
+
 ## 17. <a id="answer-17">What is the difference between function declaration and function expression?</a>
 
 Function declarations and function expressions are two ways to define functions in JavaScript. Here are their definitions and key differences:
@@ -524,6 +525,8 @@ const greet = function(name) {
 };
 
 ```
+[↑ Back to top](#table-of-contents)
+
 ## 18. <a id="answer-18">What is method chaining and how can you implement it?</a>
 Method chaining is a technique in object-oriented programming where multiple methods are called on the same object consecutively in a single statement. Each method returns the object itself, allowing the next method to be called on it. This can make the code more readable and concise.
 ```javascript
@@ -564,6 +567,8 @@ const result = calculator.add(10).subtract(2).multiply(3).divide(2).getResult();
 console.log(result); // 12
 
 ```
+[↑ Back to top](#table-of-contents)
+
 ## 19. <a id="answer-19">What are getters and setters in JavaScript?</a>
 In JavaScript, getters and setters are special methods that allow you to define the behavior of accessing and setting values on an object's properties.
 
@@ -600,6 +605,7 @@ console.log(obj.lastName); // Outputs: "Smith"
 
 
 ```
+[↑ Back to top](#table-of-contents)
 
 ## 20. <a id="answer-20">How does the 'new' keyword work in JavaScript?</a>
 In JavaScript, the `new` keyword is used to create an instance of a user-defined object type (often called a constructor function) or a built-in object type that has a constructor function. 
@@ -612,7 +618,7 @@ function Person(name, age) {
 
 const john = new Person('John', 30);
 ```
-
+[↑ Back to top](#table-of-contents)
 
 ### <a id="answer-20">What is the difference between Object.create() and the new keyword?</a>
 The Object.create() method and the new keyword in JavaScript serve different purposes for object creation and inheritance:
@@ -647,6 +653,7 @@ function Person(name) {
 const john = new Person('John');
 
 ```
+[↑ Back to top](#table-of-contents)
 
 ### <a id="answer-21">How do you implement multiple inheritance in JavaScript?</a>
 
@@ -672,6 +679,8 @@ console.log(john.name); // Outputs: "John"
 console.log(john.age); // Outputs: 30
 
 ```
+[↑ Back to top](#table-of-contents)
+
 ## <a id="answer-23">How do you use the 'super' keyword in JavaScript?</a>
 Purpose of the super Keyword in JavaScript:
 **Constructor Calls:**
@@ -713,6 +722,8 @@ myDog.makeSound(); // Outputs:
 // "Woof!"
 
 ```
+[↑ Back to top](#table-of-contents)
+
 ### <a id="answer-24">What is object-oriented Programming?</a>
 pending.....................
 
@@ -754,6 +765,8 @@ Calculator.subtract(2);
 console.log(Calculator.getResult()); // Outputs: 3
 console.log(Calculator.result); // Outputs: undefined
 ```
+[↑ Back to top](#table-of-contents)
+
 ### <a id="answer-27">How do you implement the Observer pattern in JavaScript?</a>
 pending....................
 
