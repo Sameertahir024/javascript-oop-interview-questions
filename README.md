@@ -1,6 +1,6 @@
 # Object-Oriented Programming Interview Questions with JavaScript
-
-## Table of Contents
+> Click :star:if you like the project and follow [@sameertahir024](https://twitter.com/SudheerJonna) for more updates.
+### Table of Contents
 
 | No  | Questions                                                                                                    |
 | --- | ------------------------------------------------------------------------------------------------------------ |
