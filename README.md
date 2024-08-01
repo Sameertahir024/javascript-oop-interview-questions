@@ -618,45 +618,11 @@ const john = new Person('John', 30);
 ```
 [↑ Back to top](#table-of-contents)
 
-### <a id="answer-20">What is the difference between Object.create() and the new keyword?</a>
-The Object.create() method and the new keyword in JavaScript serve different purposes for object creation and inheritance:
 
-## Object.create():
-
-Purpose: Creates a new object with the specified prototype object and optionally defines its properties.
-Syntax: Object.create(proto [, propertiesObject])
-
-```javascript
-const protoObj = {
-    greet() {
-        console.log(`Hello, ${this.name}!`);
-    }
-};
-
-const obj = Object.create(protoObj, {
-    name: { value: 'John' }
-});
-
-obj.greet(); // Outputs: "Hello, John!"
-
-```
-## new Keyword:
-
-Purpose: Creates an instance of a constructor function, which typically defines properties and methods for the objects it creates.
-```javascript
-function Person(name) {
-    this.name = name;
-}
-
-const john = new Person('John');
-
-```
-[↑ Back to top](#table-of-contents)
-
-### <a id="answer-21">How do you implement multiple inheritance in JavaScript?</a>
+## 21. <a id="answer-21">How do you implement multiple inheritance in JavaScript?</a>
 
 pending...................
-### <a id="answer-22">What is the purpose of the constructor method in a class?</a>
+## 22. <a id="answer-22">What is the purpose of the constructor method in a class?</a>
 
 Purpose of the Constructor Method in a Class:
 1. **Initialization:** Sets up initial values for object properties.
@@ -679,7 +645,7 @@ console.log(john.age); // Outputs: 30
 ```
 [↑ Back to top](#table-of-contents)
 
-## <a id="answer-23">How do you use the 'super' keyword in JavaScript?</a>
+## 23. <a id="answer-23">How do you use the 'super' keyword in JavaScript?</a>
 Purpose of the super Keyword in JavaScript:
 **Constructor Calls:**
 Allows calling the constructor of a parent class from within a subclass constructor to initialize inherited properties.
@@ -724,20 +690,180 @@ myDog.makeSound(); // Outputs:
 
 ### <a id="answer-24">What is object-oriented Programming?</a>
 pending.....................
+## 25. <a id="answer-25">What is the difference between Object.create() and the new keyword?</a>
+The Object.create() method and the new keyword in JavaScript serve different purposes for object creation and inheritance:
 
-### <a id="answer-25">How do you implement a Singleton pattern in JavaScript?</a>
+## Object.create():
+
+Purpose: Creates a new object with the specified prototype object and optionally defines its properties.
+Syntax: Object.create(proto [, propertiesObject])
+
+```javascript
+const protoObj = {
+    greet() {
+        console.log(`Hello, ${this.name}!`);
+    }
+};
+
+const obj = Object.create(protoObj, {
+    name: { value: 'John' }
+});
+
+obj.greet(); // Outputs: "Hello, John!"
+
+```
+## new Keyword:
+
+Purpose: Creates an instance of a constructor function, which typically defines properties and methods for the objects it creates.
+```javascript
+function Person(name) {
+    this.name = name;
+}
+
+const john = new Person('John');
+
+```
+[↑ Back to top](#table-of-contents)
+
+
+## 26. <a id="answer-26">How do you implement method overloading in JavaScript?</a>
 pending......................
 
+## 27. <a id="answer-27">What is the difference between static and instance methods?</a>
+pending......................
+## 28. <a id="answer-28">How do you use Symbol to create truly private properties?</a>
+pending......................
+
+## 29. <a id="answer-29">What is the purpose of the 'use strict' directive in JavaScript?</a>
+The `use strict` directive in JavaScript enables strict mode, which enforces stricter parsing and error handling rules. Its main purposes are:
+1. Catch coding mistakes
+2. Prevent unsafe actions
+3. Disable confusing or poorly thought-out features
+```javascript
+'use strict';
+
+// Without strict mode, this would create a global variable
+x = 3.14;  // Throws ReferenceError
+
+function example() {
+  'use strict';
+  
+  // Prevents accidental global variable creation
+  y = 10;  // Throws ReferenceError
+  
+  // Prevents using reserved keywords as variable names
+  let interface = 'hello';  // Throws SyntaxError
+  
+  // Makes eval() safer
+  eval('var z = 42');
+  console.log(z);  // Throws ReferenceError
+}
+
+example();
+```
+
+
+## 30 <a id="answer-30">What is the difference between deep and shallow copying of objects?</a>
+**Shallow Copying:**
+Creates a new object with the same top-level properties as the original. If the original object contains references to other objects, only the references are copied, not the actual objects. Therefore, changes to nested objects will affect both the original and the copied object.
+```javascript
+const original = { 
+  name: 'Alice', 
+  address: { city: 'Wonderland' } 
+};
+
+// Shallow copy using Object.assign
+const shallowCopy = Object.assign({}, original);
+
+// Shallow copy using spread operator
+const shallowCopy2 = { ...original };
+
+// Modifying the nested object
+shallowCopy.address.city = 'New Wonderland';
+
+console.log(original.address.city); // New Wonderland
+console.log(shallowCopy.address.city); // New Wonderland
+console.log(shallowCopy2.address.city); // New Wonderland
+
+
+```
+**Deep Copying:**
+Creates a new object and recursively copies all properties, including nested objects. Changes to the copied object's nested objects do not affect the original object's nested objects.
+```javascript
+const original = { 
+  name: 'Alice', 
+  address: { city: 'Wonderland' } 
+};
+
+// Deep copy using JSON methods
+const deepCopy = JSON.parse(JSON.stringify(original));
+
+// Modifying the nested object
+deepCopy.address.city = 'New Wonderland';
+
+console.log(original.address.city); // Wonderland
+console.log(deepCopy.address.city); // New Wonderland
+
+```
+[↑ Back to top](#table-of-contents)
+
+## 31. <a id="answer-31">What is the difference between call(), apply(), and bind()?</a>
+**call():** Invokes a function with a specified 'this' context and arguments passed individually.
+**apply():** Similar to call(), but arguments are passed as an array.
+**bind():** Returns a new function with a fixed 'this' context, without invoking it immediately.
+**Example:**
+```javascript
+const person = { name: 'John' };
+
+function greet(greeting, punctuation) {
+  console.log(`${greeting}, ${this.name}${punctuation}`);
+}
+
+// call()
+greet.call(person, 'Hello', '!');  // Output: Hello, John!
+
+// apply()
+greet.apply(person, ['Hi', '?']);  // Output: Hi, John?
+
+// bind()
+const boundGreet = greet.bind(person);
+boundGreet('Hey', '.');  // Output: Hey, John.
+```
+
+## 32. <a id="answer-32">What is the difference between Object.assign and Object.create in JavaScript?</a>
+**Object.assign():**
+Copies properties from one or more source objects to a target object, merging them into the target.
+```javascript
+const target = { a: 1, b: 2 };
+const source = { b: 3, c: 4 };
+
+const result = Object.assign(target, source);
+
+console.log(result); // { a: 1, b: 3, c: 4 }
+console.log(target); // { a: 1, b: 3, c: 4 }
+
+```
+**Object.create():**
+Creates a new object with a specified prototype object.
+```javascript
+const personPrototype = {
+  greet: function() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+};
+
+const person = Object.create(personPrototype);
+person.name = 'Alice';
+
+person.greet(); // Hello, my name is Alice
+
+```
 ### <a id="answer-26">What is the Module pattern in JavaScript?</a>
 The Module pattern in JavaScript is a design pattern used to create encapsulated and reusable code. It provides a way to create private and public methods and variables, helping to shield particular parts from the global scope.
 Key features:
-
-1:Encapsulation
-
-2:Privacy
-
-3:Organization
-
+1. Encapsulation
+2. Privacy
+3. Organization
 Example:
 ```javascript
 const Calculator = (function() {
@@ -765,86 +891,37 @@ console.log(Calculator.result); // Outputs: undefined
 ```
 [↑ Back to top](#table-of-contents)
 
-### <a id="answer-27">How do you implement the Observer pattern in JavaScript?</a>
-pending....................
 
-### <a id="answer-28">What is object-oriented Programming?</a>
-### <a id="answer-29">What is object-oriented Programming?</a>
-### <a id="answer-30">What is object-oriented Programming?</a>
-### <a id="answer-31">What is object-oriented Programming?</a>
-### <a id="answer-32">What is object-oriented Programming?</a>
-### <a id="answer-33">What is object-oriented Programming?</a>
-### <a id="answer-34">What is object-oriented Programming?</a>
-### <a id="answer-35">What is object-oriented Programming?</a>
-### <a id="answer-36">What is the purpose of the 'use strict' directive in JavaScript?</a>
 
-The 'use strict' directive in JavaScript enables strict mode, which enforces stricter parsing and error handling rules. Its main purposes are:
-
-Catch coding mistakes
-Prevent unsafe actions
-Disable confusing or poorly thought-out features
+## 37. <a id="answer-37">What is the difference between **proto** and prototype?</a>
+The key differences between proto and prototype are:
+**proto:**
+Property of object instances
+Points to the prototype of the constructor function
+Part of the object's prototype chain
+**prototype:**
+Property of constructor functions
+Contains shared properties/methods for instances
+Used to implement inheritance
 ```javascript
-'use strict';
-
-// Without strict mode, this would create a global variable
-x = 3.14;  // Throws ReferenceError
-
-function example() {
-  'use strict';
-  
-  // Prevents accidental global variable creation
-  y = 10;  // Throws ReferenceError
-  
-  // Prevents using reserved keywords as variable names
-  let interface = 'hello';  // Throws SyntaxError
-  
-  // Makes eval() safer
-  eval('var z = 42');
-  console.log(z);  // Throws ReferenceError
+function Dog(name) {
+  this.name = name;
 }
 
-example();
+Dog.prototype.bark = function() {
+  console.log(this.name + ' says woof!');
+};
+
+const dog1 = new Dog('Buddy');
+
+console.log(dog1.__proto__ === Dog.prototype);  // true
+console.log(Dog.prototype.isPrototypeOf(dog1)); // true
+
+dog1.bark();  // Outputs: Buddy says woof!
 ```
-### <a id="answer-37">What is object-oriented Programming?</a>
-### <a id="answer-38">What is object-oriented Programming?</a>
-### <a id="answer-39">What is object-oriented Programming?</a>
-### <a id="answer-40">What is the difference between call(), apply(), and bind()?</a>
 
-The main differences between call(), apply(), and bind() are:
-
-call(): Invokes a function with a specified 'this' context and arguments passed individually.
-apply(): Similar to call(), but arguments are passed as an array.
-bind(): Returns a new function with a fixed 'this' context, without invoking it immediately.
-
-Example:
-```javascript
-const person = { name: 'John' };
-
-function greet(greeting, punctuation) {
-  console.log(`${greeting}, ${this.name}${punctuation}`);
-}
-
-// call()
-greet.call(person, 'Hello', '!');  // Output: Hello, John!
-
-// apply()
-greet.apply(person, ['Hi', '?']);  // Output: Hi, John?
-
-// bind()
-const boundGreet = greet.bind(person);
-boundGreet('Hey', '.');  // Output: Hey, John.
-```
-### <a id="answer-41">What is object-oriented Programming?</a>
-### <a id="answer-42">What is object-oriented Programming?</a>
-### <a id="answer-43">What is object-oriented Programming?</a>
-### <a id="answer-44">What is object-oriented Programming?</a>
-### <a id="answer-45">What is object-oriented Programming?</a>
-### <a id="answer-46">What is object-oriented Programming?</a>
-### <a id="answer-47">What is object-oriented Programming?</a>
-### <a id="answer-48">What is object-oriented Programming?</a>
-### <a id="answer-49">What is object-oriented Programming?</a>
+## 41. <a id="answer-41">What is a Static Method in JavaScript?</a>
 A static method in JavaScript is a method that belongs to the class itself rather than to instances of the class. Key points about static methods:
-
 Called on the class, not on instances
 Cannot access instance-specific data (i.e., can't use 'this' to refer to instance properties)
 Often used for utility functions related to the class
@@ -866,36 +943,4 @@ console.log(MathOperations.multiply(4, 2)); // Outputs: 8
 // const math = new MathOperations();
 // math.add(1, 2);  // Error: math.add is not a function
 ```
-### <a id="answer-50">What is object-oriented Programming?</a>
-### <a id="answer-51">What is object-oriented Programming?</a>
-### <a id="answer-52">What is the difference between **proto** and prototype?</a>
-The key differences between proto and prototype are:
 
-proto:
-
-Property of object instances
-Points to the prototype of the constructor function
-Part of the object's prototype chain
-
-
-prototype:
-
-Property of constructor functions
-Contains shared properties/methods for instances
-Used to implement inheritance
-```javascript
-function Dog(name) {
-  this.name = name;
-}
-
-Dog.prototype.bark = function() {
-  console.log(this.name + ' says woof!');
-};
-
-const dog1 = new Dog('Buddy');
-
-console.log(dog1.__proto__ === Dog.prototype);  // true
-console.log(Dog.prototype.isPrototypeOf(dog1)); // true
-
-dog1.bark();  // Outputs: Buddy says woof!
-```
