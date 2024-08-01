@@ -1,5 +1,5 @@
 # Object-Oriented Programming Interview Questions with JavaScript
-> Click :star:if you like the project and follow [@sameertahir024](https://twitter.com/SudheerJonna) for more updates.
+> Click:star:if you like the project and follow [@sameertahir024](https://github.com/Sameertahir024) for more updates.
 ### Table of Contents
 
 | No  | Questions                                                                                                    |
