@@ -921,10 +921,7 @@ dog1.bark();  // Outputs: Buddy says woof!
 ```
 
 ## 41. <a id="answer-41">What is a Static Method in JavaScript?</a>
-A static method in JavaScript is a method that belongs to the class itself rather than to instances of the class. Key points about static methods:
-Called on the class, not on instances
-Cannot access instance-specific data (i.e., can't use 'this' to refer to instance properties)
-Often used for utility functions related to the class
+Static methods in Object-Oriented Programming (OOP) are methods defined on a class that can be called directly on the class itself, rather than on an instance of the class.
 ```javascript
 class MathOperations {
   static add(x, y) {
